@@ -9,21 +9,14 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  variant: {
-    type: String,
-    default: 'primary',
-    validator: (value: string) => ['primary', 'secondary', 'outline'].includes(value)
-  },
-  type: {
-    type: String,
-    default: 'button',
-    validator: (value: string) => ['button', 'submit', 'reset'].includes(value)
-  },
-  fullWidth: {
-    type: Boolean,
-    default: false
-  }
+withDefaults(defineProps<{
+  variant?: 'primary' | 'secondary' | 'outline'
+  type?: 'button' | 'submit' | 'reset'
+  fullWidth?: boolean
+}>(), {
+  variant: 'primary',
+  type: 'button',
+  fullWidth: false
 })
 
 defineEmits<{

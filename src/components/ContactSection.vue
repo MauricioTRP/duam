@@ -10,7 +10,7 @@
           href="https://wa.me/56935475684"
           label="Teléfono"
           value="+569 35475684"
-          aria-label="Escribe al teléfono +569 35475684"
+          ariaLabel="Escribe al teléfono +569 35475684"
           :external="true"
         >
           <template #icon>
@@ -22,7 +22,7 @@
           href="https://docs.google.com/forms/d/e/1FAIpQLSfVRc2CsyADm9uWxk2QUYAZahOd8G5DrEru-Ed0iLHHveBssw/viewform"
           label="Formulario Contacto"
           value="Escríbenos"
-          aria-label="Enlace a formulario de contacto"
+          ariaLabel="Enlace a formulario de contacto"
           :external="true"
         >
           <template #icon>

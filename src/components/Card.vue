@@ -49,7 +49,7 @@ defineProps<{
   height: 64px;
   background-color: var(--color-background-soft);
   border-radius: var(--radius-md);
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 .card__icon :deep(svg) {

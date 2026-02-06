@@ -54,7 +54,7 @@ defineProps<{
   justify-content: center;
   background-color: var(--color-background-soft);
   border-radius: var(--radius-md);
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 .contact-item__icon :deep(svg) {
@@ -81,7 +81,7 @@ defineProps<{
   font-family: var(--font-body);
   font-size: var(--font-size-lg);
   font-weight: 600;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 @media (max-width: 768px) {

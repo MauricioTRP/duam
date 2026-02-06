@@ -2,7 +2,7 @@
 
 :root {
   /* Color Palette */
-  --color-primary-navy: #1E3A8A;
+  --color-primary-green: #1b5843;
   --color-primary-white: #FFFFFF;
   --color-accent-gold: #D4AF37;
   --color-accent-teal: #0D9488;
@@ -13,22 +13,22 @@
   --color-background: var(--color-primary-white);
   --color-background-soft: var(--color-neutral-light-gray);
   --color-background-mute: #E5E7EB;
-  
+
   --color-text: var(--color-neutral-dark-gray);
   --color-text-light: #6B7280;
-  --color-heading: var(--color-primary-navy);
-  
+  --color-heading: var(--color-primary-green);
+
   --color-border: #E5E7EB;
   --color-border-hover: #D1D5DB;
-  
-  --color-primary: var(--color-primary-navy);
+
+  --color-primary: var(--color-primary-green);
   --color-accent: var(--color-accent-gold);
   --color-accent-secondary: var(--color-accent-teal);
 
   /* Typography */
   --font-heading: 'Montserrat', 'Poppins', 'Inter', sans-serif;
   --font-body: 'Open Sans', 'Roboto', 'Inter', sans-serif;
-  
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;

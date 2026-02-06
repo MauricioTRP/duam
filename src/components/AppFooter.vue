@@ -12,7 +12,7 @@
 
 <style scoped>
 .app-footer {
-  background-color: var(--color-primary-navy);
+  background-color: var(--color-primary-green);
   color: var(--color-primary-white);
   padding: var(--spacing-xl) 0;
   margin-top: auto;

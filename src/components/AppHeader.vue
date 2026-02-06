@@ -8,7 +8,7 @@
         </RouterLink>
         <span class="app-header__motto">Educamos la voluntad.</span>
       </div>
-      
+
       <nav class="app-header__nav" :class="{ 'app-header__nav--open': mobileMenuOpen }">
         <RouterLink to="/" class="app-header__nav-link" @click="closeMobileMenu">
           Inicio
@@ -98,7 +98,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 .app-header__logo-text {
@@ -143,7 +143,7 @@ onUnmounted(() => {
 }
 
 .app-header__nav-link:hover {
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 .app-header__nav-link::after {
@@ -175,7 +175,7 @@ onUnmounted(() => {
 .app-header__menu-icon {
   width: 24px;
   height: 3px;
-  background-color: var(--color-primary-navy);
+  background-color: var(--color-primary-green);
   border-radius: 2px;
   transition: all var(--transition-fast);
 }

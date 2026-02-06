@@ -32,7 +32,7 @@ const scrollToContact = () => {
 <style scoped>
 .cta-section {
   padding: var(--section-gap) 0;
-  background: linear-gradient(135deg, var(--color-accent-teal) 0%, var(--color-primary-navy) 100%);
+  background: linear-gradient(135deg, var(--color-accent-teal) 0%, var(--color-primary-green) 100%);
   color: var(--color-primary-white);
 }
 

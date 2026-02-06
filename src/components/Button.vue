@@ -45,7 +45,7 @@ defineEmits<{
 
 .btn--primary {
   background-color: var(--color-accent-gold);
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 .btn--primary:hover {
@@ -77,7 +77,7 @@ defineEmits<{
 
 .btn--outline:hover {
   background-color: var(--color-primary-white);
-  color: var(--color-primary-navy);
+  color: var(--color-primary-green);
 }
 
 @media (max-width: 768px) {

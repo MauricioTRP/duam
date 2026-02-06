@@ -35,10 +35,7 @@ const scrollToContact = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary-navy) 0%, var(--color-accent-teal) 100%);
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(13, 148, 136, 0.15) 0%, transparent 50%);
+  background: linear-gradient(135deg, var(--color-accent-teal) 0%, var(--color-primary-green) 100%);
   color: var(--color-primary-white);
   padding-top: 80px;
   overflow: hidden;
@@ -50,8 +47,8 @@ const scrollToContact = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.4);
-  z-index: 1;
+  /* background: rgba(30, 58, 138, 0.4);*/
+  /*z-index: 1;*/
 }
 
 .hero-section__container {

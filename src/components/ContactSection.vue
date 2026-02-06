@@ -7,10 +7,11 @@
       </p>
       <div class="contact-section__grid">
         <ContactItem
-          href="tel:+56935475684"
+          href="https://wa.me/56935475684"
           label="Teléfono"
           value="+569 35475684"
-          aria-label="Llamar al teléfono +569 35475684"
+          aria-label="Escribe al teléfono +569 35475684"
+          :external="true"
         >
           <template #icon>
             <IconPhone />
@@ -18,10 +19,10 @@
         </ContactItem>
 
         <ContactItem
-          href="https://www.preuniversitarioduam.cl"
-          label="Sitio Web"
-          value="www.preuniversitarioduam.cl"
-          aria-label="Visitar sitio web www.preuniversitarioduam.cl"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfVRc2CsyADm9uWxk2QUYAZahOd8G5DrEru-Ed0iLHHveBssw/viewform"
+          label="Formulario Contacto"
+          value="Escríbenos"
+          aria-label="Enlace a formulario de contacto"
           :external="true"
         >
           <template #icon>

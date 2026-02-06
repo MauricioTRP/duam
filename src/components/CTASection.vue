@@ -7,24 +7,30 @@
         Nuestro equipo está listo para ayudarte a alcanzar tus metas académicas.
       </p>
       <div class="cta-section__actions">
-        <Button variant="primary" @click="scrollToContact">
+        <DuamButton variant="primary" @click="scrollToContact">
           Contáctanos
-        </Button>
-        <Button variant="outline" @click="scrollToContact">
+        </DuamButton>
+        <DuamButton variant="outline" @click="scrollToContact">
           Más Información
-        </Button>
+        </DuamButton>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import Button from './Button.vue'
+import DuamButton from './DuamButton.vue'
+import { ref, onMounted } from 'vue'
+
+const contactSection = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  contactSection.value = document.getElementById('contacto')
+})
 
 const scrollToContact = () => {
-  const contactSection = document.getElementById('contacto')
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: 'smooth' })
+  if (contactSection.value) {
+    contactSection.value.scrollIntoView({ behavior: 'smooth' })
   }
 }
 </script>

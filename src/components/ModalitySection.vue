@@ -3,7 +3,7 @@
     <div class="modality-section__container">
       <h2 id="modality-title" class="modality-section__title">Modalidades de Estudio</h2>
       <div class="modality-section__grid">
-        <Card hover class="modality-section__card">
+        <DuamCard hover class="modality-section__card">
           <template #icon>
             <IconClassroom />
           </template>
@@ -11,30 +11,34 @@
             PRESENCIAL EN ANCUD
           </template>
           <template #content>
-            Clases interactivas en nuestro centro educativo. Aprende en un ambiente
-            presencial con profesores experimentados y compañeros de estudio.
+            Clases presenciales vespertinas en ANCUD,
+            en nuestra sede ubicada en el centro de la ciudad,
+            en un ambiente de aprendizaje colaborativo,
+            con profesores experimentados y excelente material de apoyo.
           </template>
-        </Card>
+        </DuamCard>
 
-        <Card hover class="modality-section__card">
+        <DuamCard hover class="modality-section__card">
           <template #icon>
             <IconLaptop />
           </template>
           <template #title>
-            ONLINE EN LA PROVINCIA
+            ONLINE
           </template>
           <template #content>
-            Aprende desde cualquier lugar con nuestro aula virtual. Accede a clases
-            en vivo, materiales de estudio y apoyo docente desde la comodidad de tu hogar.
+            Clases ON LINE para estudiantes y egresados de Enseñanza Media
+            de toda la Provincia de Chiloé, a través de nuestra Aula Virtual.
+            Accede a clases en vivo, con material de estudio y apoyo docente
+            desde la comodidad de tu hogar.
           </template>
-        </Card>
+        </DuamCard>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import Card from './Card.vue'
+import DuamCard from './DuamCard.vue'
 import IconClassroom from './icons/IconClassroom.vue'
 import IconLaptop from './icons/IconLaptop.vue'
 </script>

@@ -57,6 +57,11 @@ defineProps<{
   color: var(--color-primary-green);
 }
 
+/*
+ * Using :deep selector to target SVG elements provided via slots.
+ * This is necessary because slot content is not affected by scoped styles
+ * without the deep selector.
+ */
 .contact-item__icon :deep(svg) {
   width: 28px;
   height: 28px;
@@ -94,6 +99,7 @@ defineProps<{
     height: 48px;
   }
 
+  /* Deep selector needed for SVG elements in mobile view */
   .contact-item__icon :deep(svg) {
     width: 24px;
     height: 24px;

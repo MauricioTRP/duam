@@ -6,6 +6,9 @@
     <div v-if="$slots.title || title" class="card__title">
       <slot name="title">{{ title }}</slot>
     </div>
+    <div v-if="$slots.subtitle || subtitle" class="card__subtitle">
+      <slot name="subtitle">{{ subtitle }}</slot>
+    </div>
     <div v-if="$slots.content || description" class="card__content">
       <slot name="content">{{ description }}</slot>
     </div>
@@ -18,6 +21,7 @@
 <script setup lang="ts">
 defineProps<{
   title?: string
+  subtitle?: string
   description?: string
   hover?: boolean
 }>()
@@ -66,6 +70,13 @@ defineProps<{
   line-height: 1.3;
 }
 
+.card__subtitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
 .card__content {
   color: var(--color-text);
   line-height: 1.6;
@@ -73,7 +84,10 @@ defineProps<{
 }
 
 .card__footer {
+  font-family: var(--font-heading);
+  font-style: italic;
   margin-top: var(--spacing-lg);
+  color: var(--color-text-light);
 }
 
 @media (max-width: 768px) {

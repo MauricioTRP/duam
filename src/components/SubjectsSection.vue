@@ -3,51 +3,78 @@
     <div class="subjects-section__container">
       <h2 id="subjects-title" class="subjects-section__title">Nuestro Enfoque Académico</h2>
       <div class="subjects-section__grid">
-        <Card hover class="subjects-section__card">
+        <!-- Matematicas -->
+        <DuamCard hover class="subjects-section__card">
           <template #icon>
             <IconCalculator />
           </template>
           <template #title>
-            Matemáticas (MI)
+            Matemáticas (M1)
+          </template>
+          <template #subtitle>
+            ¡Menos memoria, más estrategia!
           </template>
           <template #content>
-            Preparación integral en matemáticas para las pruebas de ingreso universitario.
-            Desarrolla habilidades analíticas y resolución de problemas complejos.
+            En la prueba obligatoria de Competencia Matemática M1,
+            entregamos herramientas que permitan pensar de manera lógica y pensamiento matemático.
+            Reforzamos las bases de 1° a 2° medio, enfocándonos en la resolución de problemas reales,
+            el manejo del tiempo y tácticas para evitar errores comunes.
           </template>
-        </Card>
+          <template #footer>
+            Transforma los números en tu mejor aliado para subir tu puntaje.
+          </template>
+        </DuamCard>
 
-        <Card hover class="subjects-section__card">
+        <!-- Competencia lectora -->
+        <DuamCard hover class="subjects-section__card">
           <template #icon>
             <IconBook />
           </template>
           <template #title>
             Competencia Lectora
           </template>
-          <template #content>
-            Fortalece tu comprensión lectora y habilidades de análisis textual.
-            Mejora tu capacidad de interpretación y comunicación efectiva.
+          <template #subtitle>
+            ¡El poder de interpretar con precisión!
           </template>
-        </Card>
+          <template #content>
+            En la aprueba obligatoria de Comprensión lectora te enseñamos a descodificar.
+            Aprenderás a desarrollar habilidades críticas de rastreo,
+            inferencia y evaluación de textos,
+            identificar distractores y a dominar el vocabulario en contexto
+            para asegurar respuestas correctas en la prueba más transversal de todas.
+          </template>
+          <template #footer>
+            Esta es la materia que potencia a todas las demás.
+          </template>
+        </DuamCard>
 
-        <Card hover class="subjects-section__card">
+        <!-- Ciencias -->
+        <DuamCard hover class="subjects-section__card">
           <template #icon>
             <IconFlask />
           </template>
           <template #title>
             Ciencias
           </template>
-          <template #content>
-            Domina los conceptos fundamentales de física, química y biología.
-            Prepara tus conocimientos científicos para el ingreso universitario.
+          <template #subtitle>
+            ¡Razonamiento científico para un mundo complejo!
           </template>
-        </Card>
+          <template #content>
+            Explora la Biología, Física y Química desde el método científico.
+            Te preparamos para dominar tanto el tronco común como tu mención electiva,
+            priorizando el análisis de datos, gráficos y experimentos.
+          </template>
+          <template #footer>
+            Convierte la curiosidad en conocimiento
+          </template>
+        </DuamCard>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import Card from './Card.vue'
+import DuamCard from './DuamCard.vue'
 import IconCalculator from './icons/IconCalculator.vue'
 import IconBook from './icons/IconBook.vue'
 import IconFlask from './icons/IconFlask.vue'

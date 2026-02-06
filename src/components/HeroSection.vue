@@ -6,24 +6,35 @@
         <h1 class="hero-section__headline">MATRÍCULA 2026 ABIERTA</h1>
         <p class="hero-section__subheading">PREU DUAM</p>
         <p class="hero-section__description">
-          Prepárate para ingresar a la universidad con la mejor preparación académica.
-          Modalidades presencial y online disponibles.
+          Si tu objetivo es llegar a la Universidad, prepárate para la PAES en el PREU DUAM,
+          con más de 10 años de experiencia en la provincia de Chiloé
+          y un equipo docente con experiencia y comprometido con el
+          proceso educativo de cada estudiante.
         </p>
-        <Button variant="primary" class="hero-section__cta" @click="scrollToContact" aria-label="Ir a formulario de inscripción">
+        <p class="hero-section__description">
+          Clases en modalidad presencial y Online
+        </p>
+        <DuamButton variant="primary" class="hero-section__cta" @click="scrollToContact" aria-label="Ir a formulario de inscripción">
           Inscríbete Aquí
-        </Button>
+        </DuamButton>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import Button from './Button.vue'
+import DuamButton from './DuamButton.vue'
+import { ref, onMounted } from 'vue'
+
+const contactSection = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  contactSection.value = document.getElementById('contacto')
+})
 
 const scrollToContact = () => {
-  const contactSection = document.getElementById('contacto')
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: 'smooth' })
+  if (contactSection.value) {
+    contactSection.value.scrollIntoView({ behavior: 'smooth' })
   }
 }
 </script>
@@ -47,8 +58,6 @@ const scrollToContact = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: rgba(30, 58, 138, 0.4);*/
-  /*z-index: 1;*/
 }
 
 .hero-section__container {

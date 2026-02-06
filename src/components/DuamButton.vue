@@ -9,11 +9,22 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  variant?: 'primary' | 'secondary' | 'outline'
-  type?: 'button' | 'submit' | 'reset'
-  fullWidth?: boolean
-}>()
+defineProps({
+  variant: {
+    type: String,
+    default: 'primary',
+    validator: (value: string) => ['primary', 'secondary', 'outline'].includes(value)
+  },
+  type: {
+    type: String,
+    default: 'button',
+    validator: (value: string) => ['button', 'submit', 'reset'].includes(value)
+  },
+  fullWidth: {
+    type: Boolean,
+    default: false
+  }
+})
 
 defineEmits<{
   click: [event: MouseEvent]
@@ -49,7 +60,7 @@ defineEmits<{
 }
 
 .btn--primary:hover {
-  background-color: #C19D2E;
+  background-color: var(--color-accent-gold-dark, #C19D2E);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -64,7 +75,7 @@ defineEmits<{
 }
 
 .btn--secondary:hover {
-  background-color: #0B7D71;
+  background-color: var(--color-accent-teal-dark, #0B7D71);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }

@@ -1,7 +1,7 @@
 <template>
   <section class="cta-section" aria-labelledby="cta-title">
     <div class="cta-section__container">
-      <h2 id="cta-title" class="cta-section__title">Prepárate para la Universidad 2026</h2>
+      <h2 id="cta-title" class="cta-section__title">Prepárate para la Admisión universitaria 2027</h2>
       <p class="cta-section__description">
         Contacta hoy mismo para más información y asegura tu cupo.
         Nuestro equipo está listo para ayudarte a alcanzar tus metas académicas.

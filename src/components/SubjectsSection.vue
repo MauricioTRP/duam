@@ -129,7 +129,7 @@ import IconCommunity from './icons/IconCommunity.vue'
   .subjects-section__card {
     margin: var(--spacing-lg);
     flex: 1 1 100%;
-    min-width: 350px;
+    min-width: 300px;
   }
 
   .subjects-section__title {

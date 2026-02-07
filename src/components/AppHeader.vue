@@ -27,7 +27,7 @@
         <a href="#contacto" class="app-header__nav-link" @click="closeMobileMenu">
           Contacto
         </a>
-      </nav> -->
+      </nav>
 
       <button
         class="app-header__menu-toggle"
@@ -38,7 +38,7 @@
         <span class="app-header__menu-icon"></span>
         <span class="app-header__menu-icon"></span>
         <span class="app-header__menu-icon"></span>
-      </button>
+      </button> -->
     </div>
   </header>
 </template>
@@ -48,15 +48,15 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
 
 const isScrolled = ref(false)
-const mobileMenuOpen = ref(false)
+// const mobileMenuOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
 }
 
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-}
+// const toggleMobileMenu = () => {
+//   mobileMenuOpen.value = !mobileMenuOpen.value
+// }
 
 // const closeMobileMenu = () => {
 // TODO implement navMenu
@@ -239,6 +239,10 @@ onUnmounted(() => {
     width: 100%;
     padding: var(--spacing-sm) 0;
     text-align: center;
+  }
+
+  .app-header__logo-image {
+    max-height: 90px;
   }
 }
 

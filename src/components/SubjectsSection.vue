@@ -26,7 +26,7 @@
           <template #icon>
             <IconBook />
           </template>
-          <template #title> Competencia Lectora </template>
+          <template #title> Competencia Lectora</template>
           <template #subtitle> ¡El poder de interpretar con precisión! </template>
           <template #content>
             En la prueba obligatoria de Comprensión Lectora te enseñamos a descodificar. Aprenderás
@@ -124,6 +124,12 @@ import IconCommunity from './icons/IconCommunity.vue'
 @media (max-width: 768px) {
   .subjects-section {
     padding: var(--spacing-2xl) 0;
+  }
+
+  .subjects-section__card {
+    margin: var(--spacing-lg);
+    flex: 1 1 100%;
+    min-width: 350px;
   }
 
   .subjects-section__title {

@@ -6,16 +6,18 @@
         <h1 class="hero-section__headline">MATRÍCULA 2026 ABIERTA</h1>
         <p class="hero-section__subheading">PREU DUAM</p>
         <p class="hero-section__description">
-          Si tu objetivo es llegar a la Universidad, prepárate para la PAES en el PREU DUAM,
-          con más de 10 años de experiencia en la provincia de Chiloé
-          y un equipo docente con experiencia y comprometido con el
-          proceso educativo de cada estudiante.
+          Si tu objetivo es llegar a la Universidad, prepárate para la PAES en el PREU DUAM, con más
+          de 10 años de experiencia en la provincia de Chiloé y un equipo docente con experiencia y
+          comprometido con el proceso educativo de cada estudiante.
         </p>
-        <p class="hero-section__description">
-          Clases en modalidad presencial y Online
-        </p>
-        <DuamButton variant="primary" class="hero-section__cta" @click="scrollToContact" aria-label="Ir a formulario de inscripción">
-          Inscríbete Aquí
+        <p class="hero-section__description">Clases en modalidad presencial y Online</p>
+        <DuamButton
+          variant="primary"
+          class="hero-section__cta"
+          @click="scrollToContact"
+          aria-label="Ir a formulario de inscripción"
+        >
+          Más información
         </DuamButton>
       </div>
     </div>

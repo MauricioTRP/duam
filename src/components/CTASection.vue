@@ -1,18 +1,16 @@
 <template>
   <section class="cta-section" aria-labelledby="cta-title">
     <div class="cta-section__container">
-      <h2 id="cta-title" class="cta-section__title">Prepárate para la Admisión universitaria 2027</h2>
+      <h2 id="cta-title" class="cta-section__title">
+        Prepárate para la Admisión universitaria 2027
+      </h2>
       <p class="cta-section__description">
-        Contacta hoy mismo para más información y asegura tu cupo.
-        Nuestro equipo está listo para ayudarte a alcanzar tus metas académicas.
+        Contacta hoy mismo para más información y asegura tu cupo. Nuestro equipo está listo para
+        ayudarte a alcanzar tus metas académicas.
       </p>
       <div class="cta-section__actions">
-        <DuamButton variant="primary" @click="scrollToContact">
-          Contáctanos
-        </DuamButton>
-        <DuamButton variant="outline" @click="scrollToContact">
-          Más Información
-        </DuamButton>
+        <DuamButton variant="primary" @click="scrollToContact"> Contáctanos </DuamButton>
+        <DuamButton variant="outline" @click="goToForm"> Escríbenos al formulario </DuamButton>
       </div>
     </div>
   </section>
@@ -27,6 +25,14 @@ const contactSection = ref<HTMLElement | null>(null)
 onMounted(() => {
   contactSection.value = document.getElementById('contacto')
 })
+
+const goToForm = () => {
+  window.open(
+    'https://docs.google.com/forms/d/e/1FAIpQLSfVRc2CsyADm9uWxk2QUYAZahOd8G5DrEru-Ed0iLHHveBssw/viewform',
+    '_blanck',
+    'noopener',
+  )
+}
 
 const scrollToContact = () => {
   if (contactSection.value) {

@@ -9,7 +9,8 @@
         <span class="app-header__motto">Educamos la voluntad.</span>
       </div>
 
-      <nav class="app-header__nav" :class="{ 'app-header__nav--open': mobileMenuOpen }">
+      <!-- TODO -->
+      <!-- <nav class="app-header__nav" :class="{ 'app-header__nav--open': mobileMenuOpen }">
         <RouterLink to="/" class="app-header__nav-link" @click="closeMobileMenu">
           Inicio
         </RouterLink>
@@ -19,7 +20,7 @@
         <a href="#contacto" class="app-header__nav-link" @click="closeMobileMenu">
           Contacto
         </a>
-      </nav>
+      </nav> -->
 
       <button
         class="app-header__menu-toggle"
@@ -50,9 +51,9 @@ const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value
 }
 
-const closeMobileMenu = () => {
-  mobileMenuOpen.value = false
-}
+// const closeMobileMenu = () => {
+//   mobileMenuOpen.value = false
+// }
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)

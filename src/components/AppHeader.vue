@@ -2,11 +2,18 @@
   <header class="app-header" :class="{ 'app-header--scrolled': isScrolled }">
     <div class="app-header__container">
       <div class="app-header__logo">
-        <RouterLink to="/" class="app-header__logo-link">
+        <!-- <RouterLink to="/" class="app-header__logo-link">
           <span class="app-header__logo-text">DUAM</span>
           <span class="app-header__tagline">PREUNIVERSITARIO</span>
         </RouterLink>
-        <span class="app-header__motto">Educamos la voluntad.</span>
+        <span class="app-header__motto">Educamos la voluntad.</span> -->
+        <RouterLink to="/" class="app-header__logo-link">
+          <img
+            class="app-header__logo-image"
+            src="@/assets/Logo.jpeg"
+            alt="Duam Preuniversitario, educamos la voluntad"
+          />
+        </RouterLink>
       </div>
 
       <!-- TODO -->
@@ -52,6 +59,7 @@ const toggleMobileMenu = () => {
 }
 
 // const closeMobileMenu = () => {
+// TODO implement navMenu
 //   mobileMenuOpen.value = false
 // }
 
@@ -100,6 +108,10 @@ onUnmounted(() => {
   flex-direction: column;
   text-decoration: none;
   color: var(--color-primary-green);
+}
+
+.app-header__logo-image {
+  max-width: 250px;
 }
 
 .app-header__logo-text {

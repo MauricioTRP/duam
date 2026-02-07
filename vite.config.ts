@@ -6,7 +6,11 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/duam/' : '/',
+  base: '/',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
   plugins: [
     vue(),
     vueDevTools(),

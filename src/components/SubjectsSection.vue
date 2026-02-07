@@ -112,6 +112,7 @@ import IconCommunity from './icons/IconCommunity.vue'
 .subjects-section__card {
   flex: 0 0 calc(33.333% - var(--spacing-2xl));
   max-width: calc(33.333% - var(--spacing-2xl));
+  min-width: 450px;
 }
 
 @media (max-width: 1024px) {

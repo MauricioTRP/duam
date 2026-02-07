@@ -68,6 +68,7 @@ defineProps<{
   color: var(--color-heading);
   margin-bottom: var(--spacing-md);
   line-height: 1.3;
+  text-align: center;
 }
 
 .card__subtitle {
@@ -75,12 +76,15 @@ defineProps<{
   font-size: var(--font-size-lg);
   color: var(--color-text-light);
   margin-bottom: var(--spacing-sm);
+  text-align: center;
 }
 
 .card__content {
   color: var(--color-text);
   line-height: 1.6;
   flex-grow: 1;
+  text-align: center;
+
 }
 
 .card__footer {
@@ -88,6 +92,7 @@ defineProps<{
   font-style: italic;
   margin-top: var(--spacing-lg);
   color: var(--color-text-light);
+  text-align: end;
 }
 
 @media (max-width: 768px) {

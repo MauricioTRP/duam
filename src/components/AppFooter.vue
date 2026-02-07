@@ -2,7 +2,8 @@
   <footer class="app-footer">
     <div class="app-footer__container">
       <p class="app-footer__copyright">
-        © 2026 DUAM Preuniversitario. Educamos la voluntad.
+        Sociedad de capacitación Duamconsultores ltda.
+        Ramírez N°320, of. 205, Ancud
       </p>
     </div>
   </footer>

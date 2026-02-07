@@ -67,6 +67,9 @@ const scrollToContact = () => {
   width: 100%;
   margin: 0 auto;
   padding: var(--spacing-4xl) var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-section__content {

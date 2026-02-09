@@ -40,3 +40,6 @@ __screenshots__/
 
 # Cursor
 cursor
+.env
+secrets.txt
+git-filter-repo
